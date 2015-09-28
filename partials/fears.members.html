@@ -1,0 +1,18 @@
+<div ng-show="fears.members.length">
+  <h2>List of people who are afraid of {{fear.name}}</h2>
+  <ul>
+    <li ng-repeat="member in fears.members">
+      {{member.name}}
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h2>Add a Person who you know has {{ fear.name }} as a fear</h2>
+  <form ng-submit="addMember()" class="form-inline" role="form">
+    <div class="form-group">
+      <input type="text" ng-model="memberName" class="form-control" placeholder="Enter their name" required>
+    </div>
+    <button type="submit" class="btn btn-default">Submit </button>
+  </form>
+</div>

@@ -10,6 +10,11 @@ fearsLister.config(function($stateProvider, $urlRouterProvider){
     templateUrl: "partials/fears.html",
     controller: 'FearsCtrl'
   });
+  $stateProvider.state('fears.members',{
+    url:"/:fearId",
+    templateUrl: "partials/fears.members.html",
+    controller: 'MembersCtrl'
+  });
 
 
 });
