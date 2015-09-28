@@ -1,6 +1,6 @@
-var app = angular.module("fearsLister", ['ui.router']);
+var fearsLister = angular.module("fearsLister", ['ui.router']);
 
-fearsLister.config(function($stateProvider. $urlRouteProvider){
+fearsLister.config(function($stateProvider, $urlRouterProvider){
   $stateProvider.state('home',{
     url:"",
     templateUrl: "partials/home.html"

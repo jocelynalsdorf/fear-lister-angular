@@ -1,4 +1,4 @@
-fearsLister.controller('FearsCtrl', function($scope, $FearsFactory){
+fearsLister.controller('FearsCtrl', function FearsCtrl($scope, FearsFactory){
   $scope.fears = FearsFactory.fears;
   $scope.FearsFactory = FearsFactory;
 });
