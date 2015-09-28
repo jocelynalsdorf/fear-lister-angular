@@ -6,10 +6,13 @@
   <script src="lib/angular.js"></script>
   <script src="lib/angular-ui-router.js"></script>
   <script src="app.js"></script>
+  <script src="controllers/FearsController.js"></script>
+  <script src="services/FearsFactory.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
   <div class="container">
+    <!--ui-view tells the angular router that every view should be rendered in this div -->
     <div ui-view></div>
   </div>
 </body>
