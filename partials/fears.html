@@ -10,19 +10,22 @@
           <br>
         </form>
 
-    <!-- only shows if there are fears in the array -->
-    <div ng-show="fears.length">
-    <br>
-      <h3 class="small-title">All Admitted Fears:</h3>
+      <!-- only shows if there are fears in the array -->
+      <div ng-show="fears.length">
       <br>
-      <h4>Click on a fear to find out who else is afraid of it</h4>
-      <ul>
-        <li ng-repeat="fear in fears">
-          <a ui-sref="fears.members({fearId: fear.id})">{{fear.name}}</a>
-        </li>
-      </ul>
-    </div>
-     </center>
-  </div><!-- end of col-md-8 -->
-  </div ui-view></div>
+        <h3 class="small-title">All Admitted Fears:</h3>
+        <br>
+        <h4>Click on a fear to find out who else is afraid of it</h4>
+        <ul>
+          <li ng-repeat="fear in fears">
+            <a ui-sref="fears.members({fearId: fear.id})">{{fear.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </center>
+  <div class="row">
+    <div ui-view></div>
+  </div>
+  </div><!-- end of col-md-5 -->
+  
 </div>
