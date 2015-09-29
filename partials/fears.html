@@ -2,7 +2,7 @@
   <div class="col-md-8 col-md-offset-2">
     <!-- only shows if there are fears in the array -->
     <div ng-show="fears.length">
-      <h3>Here are all the fears admitted to so far. Do any look familar???</h3>
+      <h3 class="sub-title">Here are all the fears admitted to so far. Do any look familar???</h3>
       <ul>
         <li ng-repeat="fear in fears">
           <a ui-sref="fears.members({fearId: fear.id})">{{fear.name}}</a>

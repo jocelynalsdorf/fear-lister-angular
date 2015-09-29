@@ -1,0 +1,27 @@
+.title {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 95px;
+  color: #D32f2f;
+  opacity:0.8;
+  margin-top: 340px;
+}
+.sub-title {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 35px;
+}
+
+
+body { 
+  background: url("../imgs/darkclouds.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+a {
+  color: #afb42b;
+}
+a:hover {
+color: #cddc39;
+}
