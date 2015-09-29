@@ -1,25 +1,28 @@
 <div class="row">
-  <div class="col-md-8 col-md-offset-2">
+  <div class="col-md-push-7 col-md-5 well fear-form">
+    <center>
+      <h2 class="form-title">Add a Fear</h2>
+        <form ng-submit="FearsFactory.addFear()" class="form-inline" role="form">
+          <div class="form-group">
+            <input type="text" ng-model="FearsFactory.fearName" class="form-control" placeholder="Name the fear" required>
+          </div>
+          <button type="submit" class="btn btn-defualt">Submit</button>
+          <br>
+        </form>
+
     <!-- only shows if there are fears in the array -->
     <div ng-show="fears.length">
-      <h3 class="sub-title">Here are all the fears admitted to so far. Do any look familar???</h3>
+    <br>
+      <h3 class="small-title">All Admitted Fears:</h3>
+      <br>
+      <h4>Click on a fear to find out who else is afraid of it</h4>
       <ul>
         <li ng-repeat="fear in fears">
           <a ui-sref="fears.members({fearId: fear.id})">{{fear.name}}</a>
         </li>
       </ul>
     </div>
+     </center>
   </div><!-- end of col-md-8 -->
-</div><!-- end of row -->
-<div class="row">
-  <div class="col-md-4">
-    <h4>Add a Fear No One has Mentioned Yet</h4>
-      <form ng-submit="FearsFactory.addFear()" class="form-inline" role="form">
-        <div class="form-group">
-          <input type="text" ng-model="FearsFactory.fearName" class="form-control" placeholder="Name the fear" required>
-        </div>
-        <button type="submit" class="btn btn-defualt">Submit</button>
-      </form>
-  </div>
   </div ui-view></div>
 </div>

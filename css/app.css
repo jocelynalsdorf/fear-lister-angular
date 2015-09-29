@@ -9,8 +9,24 @@
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 35px;
 }
+.small-title {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 26px;
+}
+.well {
+  background-color: rgba(10,10,10, 0.5);
+  border:none;
+}
 
-
+.fear-form {
+  margin-top:45px;
+}
+.form-title {
+  font-size: 38px;
+  font-family: 'Archivo Black', sans-serif;
+  color: #D32f2f;
+  opacity:0.8;
+}
 body { 
   background: url("../imgs/darkclouds.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -25,3 +41,12 @@ a {
 a:hover {
 color: #cddc39;
 }
+
+ul {
+  list-style: none;
+}
+li {
+  font-size:22px;
+}
+
+
