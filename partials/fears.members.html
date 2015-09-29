@@ -1,5 +1,6 @@
 <div ng-show="fear.members.length">
-  <h2>List of people who are afraid of {{fear.name}}</h2>
+<hr>
+  <h4 class="small-title">Everyone who is afraid of <span class="red"> {{fear.name}}</span></h4>
   <ul>
     <li ng-repeat="member in fear.members">
       {{member.name}}
@@ -8,7 +9,7 @@
 </div>
 
 <div>
-  <h2>Add a Person who you know has {{fear.name}} as a fear</h2>
+  <h4 class="small-title">Who else is afraid of <span class="red">{{fear.name}}</span>? Add them!</h4>
   <form ng-submit="addMember()" class="form-inline" role="form">
     <div class="form-group">
       <input type="text" ng-model="memberName" class="form-control" placeholder="Enter their name" required>
